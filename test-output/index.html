@@ -1,0 +1,2288 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG new reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Hybrent">
+              <span class="suite-name border-failed">Hybrent</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Hybrent">
+                    <span>C:\Users\Admin\git\Hybrent-Mobile\Hybrent_Mobile_Automation\src\Hybrent3_9_0rc3\Hybrent3_9_0rc3.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Hybrent">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Hybrent">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Hybrent">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Hybrent">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Hybrent">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Hybrent">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">67 methods, 3 failed,   64 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Hybrent" class="hide-methods failed suite-Hybrent"> (hide)</a> <!-- hide-methods failed suite-Hybrent -->
+                      <a href="#" panel-name="suite-Hybrent" class="show-methods failed suite-Hybrent"> (show)</a> <!-- show-methods failed suite-Hybrent -->
+                    </span>
+                    <div class="method-list-content failed suite-Hybrent">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.BillAndReplace" hash-for-method="Recieve_BillAndReplace_PO">Recieve_BillAndReplace_PO</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Inventory_Transfer" hash-for-method="VerifyAddItemTransfer">VerifyAddItemTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Inventory_Transfer" hash-for-method="VerifyCompleteInventoryTransfer">VerifyCompleteInventoryTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Hybrent -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Hybrent" class="hide-methods passed suite-Hybrent"> (hide)</a> <!-- hide-methods passed suite-Hybrent -->
+                      <a href="#" panel-name="suite-Hybrent" class="show-methods passed suite-Hybrent"> (show)</a> <!-- show-methods passed suite-Hybrent -->
+                    </span>
+                    <div class="method-list-content passed suite-Hybrent">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Inventory_Receive" hash-for-method="CreateVendorSignature">CreateVendorSignature</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Cart" hash-for-method="Create_Order">Create_Order</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.BillOnly" hash-for-method="GenerateOrderBillOnly">GenerateOrderBillOnly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.BillAndReplace" hash-for-method="Generate_BillAndReplace_PO">Generate_BillAndReplace_PO</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Login" hash-for-method="LoginWithBlankCrednetials">LoginWithBlankCrednetials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Login" hash-for-method="LoginWithInvalidCrednetials">LoginWithInvalidCrednetials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Login" hash-for-method="LoginWithValidCrednetials">LoginWithValidCrednetials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Templates" hash-for-method="Make_Kit">Make_Kit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Templates" hash-for-method="Make_Order">Make_Order</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Shipment" hash-for-method="ReceiveShipment">ReceiveShipment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Charge_Resident" hash-for-method="VerifyAddItemChargeResident">VerifyAddItemChargeResident</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Claim" hash-for-method="VerifyAddItemInClaim">VerifyAddItemInClaim</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.BillAndReplace" hash-for-method="VerifyAddItem_BillAndReplace">VerifyAddItem_BillAndReplace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.ScanIn" hash-for-method="VerifyAddItem_ScanIn">VerifyAddItem_ScanIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.BillOnly" hash-for-method="VerifyAddNewItemBillOnly">VerifyAddNewItemBillOnly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.BillOnly" hash-for-method="VerifyBillOnlyButtonTap">VerifyBillOnlyButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Charge_Resident" hash-for-method="VerifyChargeResidentButtonTap">VerifyChargeResidentButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Claim" hash-for-method="VerifyClaimCreation">VerifyClaimCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Charge_Resident" hash-for-method="VerifyCompleteChargeResident">VerifyCompleteChargeResident</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Inventory_Receive" hash-for-method="VerifyCompleteInventoryRecieve">VerifyCompleteInventoryRecieve</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Cycle_Count" hash-for-method="VerifyCycleCountButtonTap">VerifyCycleCountButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Cycle_Count" hash-for-method="VerifyIntiateCycleCount">VerifyIntiateCycleCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Inventory_Receive" hash-for-method="VerifyInventoryRecieveButtonTap">VerifyInventoryRecieveButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Inventory_Transfer" hash-for-method="VerifyInventoryTransferButtonTap">VerifyInventoryTransferButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Invoice" hash-for-method="VerifyInvoiceButtonTap">VerifyInvoiceButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Invoice" hash-for-method="VerifyInvoiceDeatilPage">VerifyInvoiceDeatilPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Logout" hash-for-method="VerifyLogout">VerifyLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Logout" hash-for-method="VerifyLogoutButtonTap">VerifyLogoutButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.NewsAndEvents" hash-for-method="VerifyNewsAndEventsButtonTap">VerifyNewsAndEventsButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.NewsAndEvents" hash-for-method="VerifyNewsDescriptionScreen">VerifyNewsDescriptionScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Invoice" hash-for-method="VerifyProcessedInvoice">VerifyProcessedInvoice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Profile" hash-for-method="VerifyProfileButtonTap">VerifyProfileButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Profile" hash-for-method="VerifyProfileScreen">VerifyProfileScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Receive_Orders" hash-for-method="VerifySearch_Order">VerifySearch_Order</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Settings" hash-for-method="VerifySettingsButtonTap">VerifySettingsButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Settings" hash-for-method="VerifySettingsScreen">VerifySettingsScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Shipment" hash-for-method="VerifyShipmentButtonTap">VerifyShipmentButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Shipment" hash-for-method="VerifyShipmentDeatailPage">VerifyShipmentDeatailPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Claim" hash-for-method="VerifyStartNewClaimButtonTap">VerifyStartNewClaimButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.BillAndReplace" hash-for-method="VerifyTap_BillAndReplace">VerifyTap_BillAndReplace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Receive_Orders" hash-for-method="VerifyTap_ReceiveOrder">VerifyTap_ReceiveOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Login" hash-for-method="VerifyWithBlankSiteNameEnter">VerifyWithBlankSiteNameEnter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Login" hash-for-method="VerifyWithInvalidSiteNameEnter">VerifyWithInvalidSiteNameEnter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Login" hash-for-method="VerifyWithValidSiteNameEnter">VerifyWithValidSiteNameEnter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Cart" hash-for-method="Verify_ADDItemsFromCart">Verify_ADDItemsFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.ScanOut" hash-for-method="Verify_AddItemScanOut">Verify_AddItemScanOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.BillAndReplace" hash-for-method="Verify_BillAndReplace_PO">Verify_BillAndReplace_PO</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Cart" hash-for-method="Verify_Cart">Verify_Cart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.ScanIn" hash-for-method="Verify_Complete_ScanIn">Verify_Complete_ScanIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.ScanOut" hash-for-method="Verify_Complete_ScanOut">Verify_Complete_ScanOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Cycle_Count" hash-for-method="Verify_CycleCount">Verify_CycleCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Shop" hash-for-method="Verify_ItemAddToCart">Verify_ItemAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Templates" hash-for-method="Verify_KitTemplate">Verify_KitTemplate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Templates" hash-for-method="Verify_KitTemplateDetailPage">Verify_KitTemplateDetailPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Orders" hash-for-method="Verify_Order">Verify_Order</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Templates" hash-for-method="Verify_OrderTemplate">Verify_OrderTemplate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Templates" hash-for-method="Verify_OrderTemplateDetailPage">Verify_OrderTemplateDetailPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Receive_Orders" hash-for-method="Verify_ReceiveOrder">Verify_ReceiveOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.ScanIn" hash-for-method="Verify_ScanInButtonTap">Verify_ScanInButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Templates" hash-for-method="Verify_ScanOut">Verify_ScanOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.ScanOut" hash-for-method="Verify_ScanOutButtonTap">Verify_ScanOutButtonTap</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Templates" hash-for-method="Verify_ScanOutTemplate">Verify_ScanOutTemplate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Templates" hash-for-method="Verify_ScanOutTemplateDetailPage">Verify_ScanOutTemplateDetailPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hybrent" title="Hybrent3_9_0rc3.Shop" hash-for-method="Verify_Shop">Verify_Shop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Hybrent -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Hybrent" class="panel Hybrent">
+          <div class="suite-Hybrent-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.BillAndReplace</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Recieve_BillAndReplace_PO">
+                  </a> <!-- Recieve_BillAndReplace_PO -->
+                  <span class="method-name">Recieve_BillAndReplace_PO</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[3]/android.view.View/android.widget.EditText
+ (tried for 70 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Hybrent3_9_0rc3.BillAndReplace.Recieve_BillAndReplace_PO(BillAndReplace.java:327)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-9JTRJBE&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, databaseEnabled: false, desired: {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, deviceName: ZY2242XGM3, platformName: android, skipUnlock: true, version: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (5) Plus, deviceName: ZY2242XGM3, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY2242XGM3, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, skipUnlock: true, statBarHeight: 72, takesScreenshot: true, version: 8.1.0, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0451226b-4db6-4e46-bedc-1cafa85fa021
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[3]/android.view.View/android.widget.EditText
+}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 25 more
+... Removed 28 stack frames<br/> org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[3]/android.view.View/android.widget.EditText
+ (tried for 70 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Hybrent3_9_0rc3.BillAndReplace.Recieve_BillAndReplace_PO(BillAndReplace.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-9JTRJBE&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, databaseEnabled: false, desired: {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, deviceName: ZY2242XGM3, platformName: android, skipUnlock: true, version: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (5) Plus, deviceName: ZY2242XGM3, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY2242XGM3, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, skipUnlock: true, statBarHeight: 72, takesScreenshot: true, version: 8.1.0, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0451226b-4db6-4e46-bedc-1cafa85fa021
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[3]/android.view.View/android.widget.EditText
+}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 25 more
+"</b><br>org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br>org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br>Hybrent3_9_0rc3.BillAndReplace.Recieve_BillAndReplace_PO(BillAndReplace.java:327)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:715)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1122)<br>org.testng.TestNG.run(TestNG.java:1030)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-failed -->
+          <div class="suite-Hybrent-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Inventory_Transfer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAddItemTransfer">
+                  </a> <!-- VerifyAddItemTransfer -->
+                  <span class="method-name">VerifyAddItemTransfer</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Hybrent3_9_0rc3.Inventory_Transfer.VerifyAddItemTransfer(Inventory_Transfer.java:115)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-9JTRJBE&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, databaseEnabled: false, desired: {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, deviceName: ZY2242XGM3, platformName: android, skipUnlock: true, version: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (5) Plus, deviceName: ZY2242XGM3, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY2242XGM3, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, skipUnlock: true, statBarHeight: 72, takesScreenshot: true, version: 8.1.0, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0451226b-4db6-4e46-bedc-1cafa85fa021
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 25 more
+... Removed 28 stack frames<br/> org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Hybrent3_9_0rc3.Inventory_Transfer.VerifyAddItemTransfer(Inventory_Transfer.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-9JTRJBE&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, databaseEnabled: false, desired: {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, deviceName: ZY2242XGM3, platformName: android, skipUnlock: true, version: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (5) Plus, deviceName: ZY2242XGM3, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY2242XGM3, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, skipUnlock: true, statBarHeight: 72, takesScreenshot: true, version: 8.1.0, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0451226b-4db6-4e46-bedc-1cafa85fa021
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 25 more
+"</b><br>org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br>org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br>Hybrent3_9_0rc3.Inventory_Transfer.VerifyAddItemTransfer(Inventory_Transfer.java:115)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:715)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1122)<br>org.testng.TestNG.run(TestNG.java:1030)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCompleteInventoryTransfer">
+                  </a> <!-- VerifyCompleteInventoryTransfer -->
+                  <span class="method-name">VerifyCompleteInventoryTransfer</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[2]/android.widget.ListView/android.view.View[1]/android.view.View/android.view.View/android.widget.Button (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Hybrent3_9_0rc3.Inventory_Transfer.VerifyCompleteInventoryTransfer(Inventory_Transfer.java:158)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-9JTRJBE&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, databaseEnabled: false, desired: {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, deviceName: ZY2242XGM3, platformName: android, skipUnlock: true, version: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (5) Plus, deviceName: ZY2242XGM3, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY2242XGM3, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, skipUnlock: true, statBarHeight: 72, takesScreenshot: true, version: 8.1.0, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0451226b-4db6-4e46-bedc-1cafa85fa021
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[2]/android.widget.ListView/android.view.View[1]/android.view.View/android.view.View/android.widget.Button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 25 more
+... Removed 27 stack frames<br/> org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[2]/android.widget.ListView/android.view.View[1]/android.view.View/android.view.View/android.widget.Button (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Hybrent3_9_0rc3.Inventory_Transfer.VerifyCompleteInventoryTransfer(Inventory_Transfer.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-9JTRJBE&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, databaseEnabled: false, desired: {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, deviceName: ZY2242XGM3, platformName: android, skipUnlock: true, version: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (5) Plus, deviceName: ZY2242XGM3, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY2242XGM3, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, skipUnlock: true, statBarHeight: 72, takesScreenshot: true, version: 8.1.0, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0451226b-4db6-4e46-bedc-1cafa85fa021
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[2]/android.widget.ListView/android.view.View[1]/android.view.View/android.view.View/android.widget.Button}
+	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 25 more
+"</b><br>org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br>org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br>Hybrent3_9_0rc3.Inventory_Transfer.VerifyCompleteInventoryTransfer(Inventory_Transfer.java:158)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:715)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1122)<br>org.testng.TestNG.run(TestNG.java:1030)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-failed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Profile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyProfileButtonTap">
+                  </a> <!-- VerifyProfileButtonTap -->
+                  <span class="method-name">VerifyProfileButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyProfileScreen">
+                  </a> <!-- VerifyProfileScreen -->
+                  <span class="method-name">VerifyProfileScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Cart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Create_Order">
+                  </a> <!-- Create_Order -->
+                  <span class="method-name">Create_Order</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_ADDItemsFromCart">
+                  </a> <!-- Verify_ADDItemsFromCart -->
+                  <span class="method-name">Verify_ADDItemsFromCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Cart">
+                  </a> <!-- Verify_Cart -->
+                  <span class="method-name">Verify_Cart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.ScanIn</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAddItem_ScanIn">
+                  </a> <!-- VerifyAddItem_ScanIn -->
+                  <span class="method-name">VerifyAddItem_ScanIn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Complete_ScanIn">
+                  </a> <!-- Verify_Complete_ScanIn -->
+                  <span class="method-name">Verify_Complete_ScanIn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_ScanInButtonTap">
+                  </a> <!-- Verify_ScanInButtonTap -->
+                  <span class="method-name">Verify_ScanInButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Charge_Resident</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAddItemChargeResident">
+                  </a> <!-- VerifyAddItemChargeResident -->
+                  <span class="method-name">VerifyAddItemChargeResident</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyChargeResidentButtonTap">
+                  </a> <!-- VerifyChargeResidentButtonTap -->
+                  <span class="method-name">VerifyChargeResidentButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCompleteChargeResident">
+                  </a> <!-- VerifyCompleteChargeResident -->
+                  <span class="method-name">VerifyCompleteChargeResident</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.BillOnly</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GenerateOrderBillOnly">
+                  </a> <!-- GenerateOrderBillOnly -->
+                  <span class="method-name">GenerateOrderBillOnly</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAddNewItemBillOnly">
+                  </a> <!-- VerifyAddNewItemBillOnly -->
+                  <span class="method-name">VerifyAddNewItemBillOnly</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyBillOnlyButtonTap">
+                  </a> <!-- VerifyBillOnlyButtonTap -->
+                  <span class="method-name">VerifyBillOnlyButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Inventory_Receive</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateVendorSignature">
+                  </a> <!-- CreateVendorSignature -->
+                  <span class="method-name">CreateVendorSignature</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCompleteInventoryRecieve">
+                  </a> <!-- VerifyCompleteInventoryRecieve -->
+                  <span class="method-name">VerifyCompleteInventoryRecieve</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyInventoryRecieveButtonTap">
+                  </a> <!-- VerifyInventoryRecieveButtonTap -->
+                  <span class="method-name">VerifyInventoryRecieveButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.BillAndReplace</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Generate_BillAndReplace_PO">
+                  </a> <!-- Generate_BillAndReplace_PO -->
+                  <span class="method-name">Generate_BillAndReplace_PO</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAddItem_BillAndReplace">
+                  </a> <!-- VerifyAddItem_BillAndReplace -->
+                  <span class="method-name">VerifyAddItem_BillAndReplace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyTap_BillAndReplace">
+                  </a> <!-- VerifyTap_BillAndReplace -->
+                  <span class="method-name">VerifyTap_BillAndReplace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_BillAndReplace_PO">
+                  </a> <!-- Verify_BillAndReplace_PO -->
+                  <span class="method-name">Verify_BillAndReplace_PO</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.ScanOut</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_AddItemScanOut">
+                  </a> <!-- Verify_AddItemScanOut -->
+                  <span class="method-name">Verify_AddItemScanOut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Complete_ScanOut">
+                  </a> <!-- Verify_Complete_ScanOut -->
+                  <span class="method-name">Verify_Complete_ScanOut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_ScanOutButtonTap">
+                  </a> <!-- Verify_ScanOutButtonTap -->
+                  <span class="method-name">Verify_ScanOutButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Cycle_Count</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCycleCountButtonTap">
+                  </a> <!-- VerifyCycleCountButtonTap -->
+                  <span class="method-name">VerifyCycleCountButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyIntiateCycleCount">
+                  </a> <!-- VerifyIntiateCycleCount -->
+                  <span class="method-name">VerifyIntiateCycleCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_CycleCount">
+                  </a> <!-- Verify_CycleCount -->
+                  <span class="method-name">Verify_CycleCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.NewsAndEvents</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyNewsAndEventsButtonTap">
+                  </a> <!-- VerifyNewsAndEventsButtonTap -->
+                  <span class="method-name">VerifyNewsAndEventsButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyNewsDescriptionScreen">
+                  </a> <!-- VerifyNewsDescriptionScreen -->
+                  <span class="method-name">VerifyNewsDescriptionScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Settings</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySettingsButtonTap">
+                  </a> <!-- VerifySettingsButtonTap -->
+                  <span class="method-name">VerifySettingsButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySettingsScreen">
+                  </a> <!-- VerifySettingsScreen -->
+                  <span class="method-name">VerifySettingsScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Templates</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Make_Kit">
+                  </a> <!-- Make_Kit -->
+                  <span class="method-name">Make_Kit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Make_Order">
+                  </a> <!-- Make_Order -->
+                  <span class="method-name">Make_Order</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_KitTemplate">
+                  </a> <!-- Verify_KitTemplate -->
+                  <span class="method-name">Verify_KitTemplate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_KitTemplateDetailPage">
+                  </a> <!-- Verify_KitTemplateDetailPage -->
+                  <span class="method-name">Verify_KitTemplateDetailPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_OrderTemplate">
+                  </a> <!-- Verify_OrderTemplate -->
+                  <span class="method-name">Verify_OrderTemplate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_OrderTemplateDetailPage">
+                  </a> <!-- Verify_OrderTemplateDetailPage -->
+                  <span class="method-name">Verify_OrderTemplateDetailPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_ScanOut">
+                  </a> <!-- Verify_ScanOut -->
+                  <span class="method-name">Verify_ScanOut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_ScanOutTemplate">
+                  </a> <!-- Verify_ScanOutTemplate -->
+                  <span class="method-name">Verify_ScanOutTemplate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_ScanOutTemplateDetailPage">
+                  </a> <!-- Verify_ScanOutTemplateDetailPage -->
+                  <span class="method-name">Verify_ScanOutTemplateDetailPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Invoice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyInvoiceButtonTap">
+                  </a> <!-- VerifyInvoiceButtonTap -->
+                  <span class="method-name">VerifyInvoiceButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyInvoiceDeatilPage">
+                  </a> <!-- VerifyInvoiceDeatilPage -->
+                  <span class="method-name">VerifyInvoiceDeatilPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyProcessedInvoice">
+                  </a> <!-- VerifyProcessedInvoice -->
+                  <span class="method-name">VerifyProcessedInvoice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithBlankCrednetials">
+                  </a> <!-- LoginWithBlankCrednetials -->
+                  <span class="method-name">LoginWithBlankCrednetials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithInvalidCrednetials">
+                  </a> <!-- LoginWithInvalidCrednetials -->
+                  <span class="method-name">LoginWithInvalidCrednetials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithValidCrednetials">
+                  </a> <!-- LoginWithValidCrednetials -->
+                  <span class="method-name">LoginWithValidCrednetials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyWithBlankSiteNameEnter">
+                  </a> <!-- VerifyWithBlankSiteNameEnter -->
+                  <span class="method-name">VerifyWithBlankSiteNameEnter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyWithInvalidSiteNameEnter">
+                  </a> <!-- VerifyWithInvalidSiteNameEnter -->
+                  <span class="method-name">VerifyWithInvalidSiteNameEnter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyWithValidSiteNameEnter">
+                  </a> <!-- VerifyWithValidSiteNameEnter -->
+                  <span class="method-name">VerifyWithValidSiteNameEnter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Shop</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_ItemAddToCart">
+                  </a> <!-- Verify_ItemAddToCart -->
+                  <span class="method-name">Verify_ItemAddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Shop">
+                  </a> <!-- Verify_Shop -->
+                  <span class="method-name">Verify_Shop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Receive_Orders</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySearch_Order">
+                  </a> <!-- VerifySearch_Order -->
+                  <span class="method-name">VerifySearch_Order</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyTap_ReceiveOrder">
+                  </a> <!-- VerifyTap_ReceiveOrder -->
+                  <span class="method-name">VerifyTap_ReceiveOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_ReceiveOrder">
+                  </a> <!-- Verify_ReceiveOrder -->
+                  <span class="method-name">Verify_ReceiveOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Orders</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Order">
+                  </a> <!-- Verify_Order -->
+                  <span class="method-name">Verify_Order</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Inventory_Transfer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyInventoryTransferButtonTap">
+                  </a> <!-- VerifyInventoryTransferButtonTap -->
+                  <span class="method-name">VerifyInventoryTransferButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Logout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLogout">
+                  </a> <!-- VerifyLogout -->
+                  <span class="method-name">VerifyLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLogoutButtonTap">
+                  </a> <!-- VerifyLogoutButtonTap -->
+                  <span class="method-name">VerifyLogoutButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Shipment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReceiveShipment">
+                  </a> <!-- ReceiveShipment -->
+                  <span class="method-name">ReceiveShipment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyShipmentButtonTap">
+                  </a> <!-- VerifyShipmentButtonTap -->
+                  <span class="method-name">VerifyShipmentButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyShipmentDeatailPage">
+                  </a> <!-- VerifyShipmentDeatailPage -->
+                  <span class="method-name">VerifyShipmentDeatailPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+          <div class="suite-Hybrent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Hybrent3_9_0rc3.Claim</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAddItemInClaim">
+                  </a> <!-- VerifyAddItemInClaim -->
+                  <span class="method-name">VerifyAddItemInClaim</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyClaimCreation">
+                  </a> <!-- VerifyClaimCreation -->
+                  <span class="method-name">VerifyClaimCreation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyStartNewClaimButtonTap">
+                  </a> <!-- VerifyStartNewClaimButtonTap -->
+                  <span class="method-name">VerifyStartNewClaimButtonTap</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hybrent-class-passed -->
+        </div> <!-- panel Hybrent -->
+        <div panel-name="test-xml-Hybrent" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Admin\git\Hybrent-Mobile\Hybrent_Mobile_Automation\src\Hybrent3_9_0rc3\Hybrent3_9_0rc3.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Hybrent&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Hybrent3_9_0rc3.CustomReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Mobile Automation&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Login&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Shop&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Cart&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Orders&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Receive_Orders&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.BillAndReplace&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Shipment&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Invoice&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Templates&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.ScanIn&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.ScanOut&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Charge_Resident&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Inventory_Transfer&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Inventory_Receive&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.BillOnly&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Claim&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Cycle_Count&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.NewsAndEvents&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Profile&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Settings&quot;/&gt;
+      &lt;class name=&quot;Hybrent3_9_0rc3.Logout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Mobile Automation --&gt;
+&lt;/suite&gt; &lt;!-- Hybrent --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Hybrent" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Hybrent</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Mobile Automation (21 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Hybrent" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Hybrent</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Hybrent" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Hybrent</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Hybrent');
+function tableData_Hybrent() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(67);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Recieve_BillAndReplace_PO')
+data.setCell(0, 2, 'Hybrent3_9_0rc3.BillAndReplace')
+data.setCell(0, 3, 129202);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'VerifyTap_BillAndReplace')
+data.setCell(1, 2, 'Hybrent3_9_0rc3.BillAndReplace')
+data.setCell(1, 3, 121641);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'VerifyIntiateCycleCount')
+data.setCell(2, 2, 'Hybrent3_9_0rc3.Cycle_Count')
+data.setCell(2, 3, 120836);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'VerifyAddItemTransfer')
+data.setCell(3, 2, 'Hybrent3_9_0rc3.Inventory_Transfer')
+data.setCell(3, 3, 70066);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'GenerateOrderBillOnly')
+data.setCell(4, 2, 'Hybrent3_9_0rc3.BillOnly')
+data.setCell(4, 3, 69456);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ReceiveShipment')
+data.setCell(5, 2, 'Hybrent3_9_0rc3.Shipment')
+data.setCell(5, 3, 64449);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'VerifyBillOnlyButtonTap')
+data.setCell(6, 2, 'Hybrent3_9_0rc3.BillOnly')
+data.setCell(6, 3, 63121);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'VerifyCompleteInventoryTransfer')
+data.setCell(7, 2, 'Hybrent3_9_0rc3.Inventory_Transfer')
+data.setCell(7, 3, 61768);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'LoginWithBlankCrednetials')
+data.setCell(8, 2, 'Hybrent3_9_0rc3.Login')
+data.setCell(8, 3, 58307);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Verify_Complete_ScanOut')
+data.setCell(9, 2, 'Hybrent3_9_0rc3.ScanOut')
+data.setCell(9, 3, 55630);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'VerifyInventoryRecieveButtonTap')
+data.setCell(10, 2, 'Hybrent3_9_0rc3.Inventory_Receive')
+data.setCell(10, 3, 51971);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Verify_Cart')
+data.setCell(11, 2, 'Hybrent3_9_0rc3.Cart')
+data.setCell(11, 3, 49320);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'VerifyCycleCountButtonTap')
+data.setCell(12, 2, 'Hybrent3_9_0rc3.Cycle_Count')
+data.setCell(12, 3, 48507);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'VerifyNewsAndEventsButtonTap')
+data.setCell(13, 2, 'Hybrent3_9_0rc3.NewsAndEvents')
+data.setCell(13, 3, 47137);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Verify_OrderTemplate')
+data.setCell(14, 2, 'Hybrent3_9_0rc3.Templates')
+data.setCell(14, 3, 46644);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'VerifyLogoutButtonTap')
+data.setCell(15, 2, 'Hybrent3_9_0rc3.Logout')
+data.setCell(15, 3, 44122);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'VerifyAddItemChargeResident')
+data.setCell(16, 2, 'Hybrent3_9_0rc3.Charge_Resident')
+data.setCell(16, 3, 42913);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'VerifyTap_ReceiveOrder')
+data.setCell(17, 2, 'Hybrent3_9_0rc3.Receive_Orders')
+data.setCell(17, 3, 42875);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'VerifyProfileButtonTap')
+data.setCell(18, 2, 'Hybrent3_9_0rc3.Profile')
+data.setCell(18, 3, 42234);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'VerifyInventoryTransferButtonTap')
+data.setCell(19, 2, 'Hybrent3_9_0rc3.Inventory_Transfer')
+data.setCell(19, 3, 39940);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'Verify_ScanOut')
+data.setCell(20, 2, 'Hybrent3_9_0rc3.Templates')
+data.setCell(20, 3, 37962);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'VerifyCompleteChargeResident')
+data.setCell(21, 2, 'Hybrent3_9_0rc3.Charge_Resident')
+data.setCell(21, 3, 37705);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'VerifyClaimCreation')
+data.setCell(22, 2, 'Hybrent3_9_0rc3.Claim')
+data.setCell(22, 3, 33736);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'Verify_ADDItemsFromCart')
+data.setCell(23, 2, 'Hybrent3_9_0rc3.Cart')
+data.setCell(23, 3, 33641);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'CreateVendorSignature')
+data.setCell(24, 2, 'Hybrent3_9_0rc3.Inventory_Receive')
+data.setCell(24, 3, 32781);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'VerifyProfileScreen')
+data.setCell(25, 2, 'Hybrent3_9_0rc3.Profile')
+data.setCell(25, 3, 31339);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'VerifyCompleteInventoryRecieve')
+data.setCell(26, 2, 'Hybrent3_9_0rc3.Inventory_Receive')
+data.setCell(26, 3, 31264);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'VerifySettingsScreen')
+data.setCell(27, 2, 'Hybrent3_9_0rc3.Settings')
+data.setCell(27, 3, 31196);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'VerifyStartNewClaimButtonTap')
+data.setCell(28, 2, 'Hybrent3_9_0rc3.Claim')
+data.setCell(28, 3, 31155);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'VerifyAddNewItemBillOnly')
+data.setCell(29, 2, 'Hybrent3_9_0rc3.BillOnly')
+data.setCell(29, 3, 29737);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'Verify_Complete_ScanIn')
+data.setCell(30, 2, 'Hybrent3_9_0rc3.ScanIn')
+data.setCell(30, 3, 27636);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'Verify_ReceiveOrder')
+data.setCell(31, 2, 'Hybrent3_9_0rc3.Receive_Orders')
+data.setCell(31, 3, 26937);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'VerifyProcessedInvoice')
+data.setCell(32, 2, 'Hybrent3_9_0rc3.Invoice')
+data.setCell(32, 3, 24913);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'Verify_Order')
+data.setCell(33, 2, 'Hybrent3_9_0rc3.Orders')
+data.setCell(33, 3, 24685);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'Verify_ScanOutTemplate')
+data.setCell(34, 2, 'Hybrent3_9_0rc3.Templates')
+data.setCell(34, 3, 24559);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'VerifyAddItem_ScanIn')
+data.setCell(35, 2, 'Hybrent3_9_0rc3.ScanIn')
+data.setCell(35, 3, 23807);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'Verify_BillAndReplace_PO')
+data.setCell(36, 2, 'Hybrent3_9_0rc3.BillAndReplace')
+data.setCell(36, 3, 23387);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'VerifyAddItemInClaim')
+data.setCell(37, 2, 'Hybrent3_9_0rc3.Claim')
+data.setCell(37, 3, 22331);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'VerifyChargeResidentButtonTap')
+data.setCell(38, 2, 'Hybrent3_9_0rc3.Charge_Resident')
+data.setCell(38, 3, 22160);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'Verify_Shop')
+data.setCell(39, 2, 'Hybrent3_9_0rc3.Shop')
+data.setCell(39, 3, 19123);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'Create_Order')
+data.setCell(40, 2, 'Hybrent3_9_0rc3.Cart')
+data.setCell(40, 3, 18218);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'Generate_BillAndReplace_PO')
+data.setCell(41, 2, 'Hybrent3_9_0rc3.BillAndReplace')
+data.setCell(41, 3, 18171);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'VerifyShipmentButtonTap')
+data.setCell(42, 2, 'Hybrent3_9_0rc3.Shipment')
+data.setCell(42, 3, 17843);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'Verify_ScanInButtonTap')
+data.setCell(43, 2, 'Hybrent3_9_0rc3.ScanIn')
+data.setCell(43, 3, 17081);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'Make_Kit')
+data.setCell(44, 2, 'Hybrent3_9_0rc3.Templates')
+data.setCell(44, 3, 15670);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'VerifyAddItem_BillAndReplace')
+data.setCell(45, 2, 'Hybrent3_9_0rc3.BillAndReplace')
+data.setCell(45, 3, 14716);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'VerifyNewsDescriptionScreen')
+data.setCell(46, 2, 'Hybrent3_9_0rc3.NewsAndEvents')
+data.setCell(46, 3, 14406);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'Verify_KitTemplateDetailPage')
+data.setCell(47, 2, 'Hybrent3_9_0rc3.Templates')
+data.setCell(47, 3, 14377);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'LoginWithValidCrednetials')
+data.setCell(48, 2, 'Hybrent3_9_0rc3.Login')
+data.setCell(48, 3, 13884);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'Make_Order')
+data.setCell(49, 2, 'Hybrent3_9_0rc3.Templates')
+data.setCell(49, 3, 13292);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'Verify_ScanOutButtonTap')
+data.setCell(50, 2, 'Hybrent3_9_0rc3.ScanOut')
+data.setCell(50, 3, 12420);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'VerifySettingsButtonTap')
+data.setCell(51, 2, 'Hybrent3_9_0rc3.Settings')
+data.setCell(51, 3, 11924);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'VerifyInvoiceButtonTap')
+data.setCell(52, 2, 'Hybrent3_9_0rc3.Invoice')
+data.setCell(52, 3, 11387);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'Verify_AddItemScanOut')
+data.setCell(53, 2, 'Hybrent3_9_0rc3.ScanOut')
+data.setCell(53, 3, 10680);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'Verify_OrderTemplateDetailPage')
+data.setCell(54, 2, 'Hybrent3_9_0rc3.Templates')
+data.setCell(54, 3, 10201);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'VerifyWithBlankSiteNameEnter')
+data.setCell(55, 2, 'Hybrent3_9_0rc3.Login')
+data.setCell(55, 3, 9661);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'Verify_ScanOutTemplateDetailPage')
+data.setCell(56, 2, 'Hybrent3_9_0rc3.Templates')
+data.setCell(56, 3, 9121);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'LoginWithInvalidCrednetials')
+data.setCell(57, 2, 'Hybrent3_9_0rc3.Login')
+data.setCell(57, 3, 8191);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'Verify_ItemAddToCart')
+data.setCell(58, 2, 'Hybrent3_9_0rc3.Shop')
+data.setCell(58, 3, 7669);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'VerifyWithValidSiteNameEnter')
+data.setCell(59, 2, 'Hybrent3_9_0rc3.Login')
+data.setCell(59, 3, 6692);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'VerifyWithInvalidSiteNameEnter')
+data.setCell(60, 2, 'Hybrent3_9_0rc3.Login')
+data.setCell(60, 3, 6382);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'VerifyInvoiceDeatilPage')
+data.setCell(61, 2, 'Hybrent3_9_0rc3.Invoice')
+data.setCell(61, 3, 6014);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'VerifySearch_Order')
+data.setCell(62, 2, 'Hybrent3_9_0rc3.Receive_Orders')
+data.setCell(62, 3, 5636);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'Verify_CycleCount')
+data.setCell(63, 2, 'Hybrent3_9_0rc3.Cycle_Count')
+data.setCell(63, 3, 4842);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'VerifyShipmentDeatailPage')
+data.setCell(64, 2, 'Hybrent3_9_0rc3.Shipment')
+data.setCell(64, 3, 1329);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'VerifyLogout')
+data.setCell(65, 2, 'Hybrent3_9_0rc3.Logout')
+data.setCell(65, 3, 873);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'Verify_KitTemplate')
+data.setCell(66, 2, 'Hybrent3_9_0rc3.Templates')
+data.setCell(66, 3, 468);
+window.suiteTableData['Hybrent']= { tableData: data, tableDiv: 'times-div-Hybrent'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 35 minutes</span>
+              <div id="times-div-Hybrent">
+              </div> <!-- times-div-Hybrent -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Hybrent" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Hybrent</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyChargeResidentButtonTap</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Charge Resident Started sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Verify_KitTemplate</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Kit Template Started sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Make_Kit</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Kit Template has been Completed sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyWithBlankSiteNameEnter</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Login Session Started=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Make_Order</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Order Template has been Completed sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyInventoryTransferButtonTap</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Inventory Transfer Started sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyIntiateCycleCount</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Cycle Count Completed Successfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyInventoryRecieveButtonTap</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Inventory Receive Started sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyCompleteChargeResident</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Charge Resident has been Completed sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CreateVendorSignature</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Inventory Transfer has been Completed sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyNewsAndEventsButtonTap</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====News And Events Started=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Verify_ScanOut</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Scan_out Template has been Completed sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Verify_ScanOutTemplate</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Scan_out Template Started sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyInvoiceButtonTap</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Invoice processed Started sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Verify_ScanOutButtonTap</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====ScanOut Started=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyBillOnlyButtonTap</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====BillOnly Started=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyCycleCountButtonTap</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Cycle count Started=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Verify_ScanInButtonTap</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====ScanIn Started=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyProcessedInvoice</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Invoice processed has been Completed sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Verify_OrderTemplate</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Order Template Started sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">ReceiveShipment</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Shipment has been Completed sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyStartNewClaimButtonTap</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Claims Started=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyShipmentButtonTap</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Shipment Started sucessfully=====<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Hybrent" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Hybrent" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp_Device</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">VerifyWithBlankSiteNameEnter</span>
+                <span class="method-start">30189 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyWithInvalidSiteNameEnter</span>
+                <span class="method-start">39856 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyWithValidSiteNameEnter</span>
+                <span class="method-start">46244 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginWithBlankCrednetials</span>
+                <span class="method-start">52941 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginWithInvalidCrednetials</span>
+                <span class="method-start">111253 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginWithValidCrednetials</span>
+                <span class="method-start">119449 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Shop</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Verify_Shop</span>
+                <span class="method-start">133347 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_ItemAddToCart</span>
+                <span class="method-start">152475 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Cart</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Verify_Cart</span>
+                <span class="method-start">160153 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_ADDItemsFromCart</span>
+                <span class="method-start">209479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Create_Order</span>
+                <span class="method-start">243123 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Orders</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Verify_Order</span>
+                <span class="method-start">261346 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Receive_Orders</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyTap_ReceiveOrder</span>
+                <span class="method-start">286037 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifySearch_Order</span>
+                <span class="method-start">328917 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_ReceiveOrder</span>
+                <span class="method-start">334556 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.BillAndReplace</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyTap_BillAndReplace</span>
+                <span class="method-start">361498 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyAddItem_BillAndReplace</span>
+                <span class="method-start">483143 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Generate_BillAndReplace_PO</span>
+                <span class="method-start">497862 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_BillAndReplace_PO</span>
+                <span class="method-start">516037 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Recieve_BillAndReplace_PO</span>
+                <span class="method-start">539428 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Shipment</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyShipmentButtonTap</span>
+                <span class="method-start">668640 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyShipmentDeatailPage</span>
+                <span class="method-start">686487 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ReceiveShipment</span>
+                <span class="method-start">687819 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Invoice</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyInvoiceButtonTap</span>
+                <span class="method-start">752272 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyInvoiceDeatilPage</span>
+                <span class="method-start">763662 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyProcessedInvoice</span>
+                <span class="method-start">769679 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Templates</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Verify_OrderTemplate</span>
+                <span class="method-start">794598 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_OrderTemplateDetailPage</span>
+                <span class="method-start">841246 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Make_Order</span>
+                <span class="method-start">851450 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_ScanOutTemplate</span>
+                <span class="method-start">864746 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_ScanOutTemplateDetailPage</span>
+                <span class="method-start">889307 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_ScanOut</span>
+                <span class="method-start">898431 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_KitTemplate</span>
+                <span class="method-start">936398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_KitTemplateDetailPage</span>
+                <span class="method-start">936869 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Make_Kit</span>
+                <span class="method-start">951249 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.ScanIn</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Verify_ScanInButtonTap</span>
+                <span class="method-start">966922 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyAddItem_ScanIn</span>
+                <span class="method-start">984007 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_Complete_ScanIn</span>
+                <span class="method-start">1007817 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.ScanOut</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Verify_ScanOutButtonTap</span>
+                <span class="method-start">1035459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_AddItemScanOut</span>
+                <span class="method-start">1047882 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_Complete_ScanOut</span>
+                <span class="method-start">1058565 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Charge_Resident</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyChargeResidentButtonTap</span>
+                <span class="method-start">1114198 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyAddItemChargeResident</span>
+                <span class="method-start">1136361 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyCompleteChargeResident</span>
+                <span class="method-start">1179277 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Inventory_Transfer</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyInventoryTransferButtonTap</span>
+                <span class="method-start">1216986 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyAddItemTransfer</span>
+                <span class="method-start">1256929 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyCompleteInventoryTransfer</span>
+                <span class="method-start">1327003 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Inventory_Receive</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyInventoryRecieveButtonTap</span>
+                <span class="method-start">1388782 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyCompleteInventoryRecieve</span>
+                <span class="method-start">1440757 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CreateVendorSignature</span>
+                <span class="method-start">1472024 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.BillOnly</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyBillOnlyButtonTap</span>
+                <span class="method-start">1504808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyAddNewItemBillOnly</span>
+                <span class="method-start">1567932 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GenerateOrderBillOnly</span>
+                <span class="method-start">1597673 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Claim</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyStartNewClaimButtonTap</span>
+                <span class="method-start">1667132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyAddItemInClaim</span>
+                <span class="method-start">1698290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyClaimCreation</span>
+                <span class="method-start">1720623 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Cycle_Count</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyCycleCountButtonTap</span>
+                <span class="method-start">1754361 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyIntiateCycleCount</span>
+                <span class="method-start">1802871 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_CycleCount</span>
+                <span class="method-start">1923710 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.NewsAndEvents</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyNewsAndEventsButtonTap</span>
+                <span class="method-start">1928555 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyNewsDescriptionScreen</span>
+                <span class="method-start">1975695 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Profile</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyProfileButtonTap</span>
+                <span class="method-start">1990104 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyProfileScreen</span>
+                <span class="method-start">2032341 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Settings</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifySettingsButtonTap</span>
+                <span class="method-start">2063684 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifySettingsScreen</span>
+                <span class="method-start">2075612 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Hybrent3_9_0rc3.Logout</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyLogoutButtonTap</span>
+                <span class="method-start">2106811 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyLogout</span>
+                <span class="method-start">2150935 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

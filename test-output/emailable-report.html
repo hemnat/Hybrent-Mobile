@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Mobile Automation</td><td class="numi">64</td><td class="numi">64</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">2,151.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Mobile Automation &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">Hybrent3_9_0rc3.BillAndReplace<td><a href="#m1"><b>Recieve_BillAndReplace_PO</b>  </a></td><td class="numi">1</td><td>1650869036020</td><td class="numi">129202</td></tr>
+<tr class="failedeven"><td rowspan="2">Hybrent3_9_0rc3.Inventory_Transfer<td><a href="#m2"><b>VerifyAddItemTransfer</b>  </a></td><td class="numi">1</td><td>1650869753521</td><td class="numi">70066</td></tr><tr class="failedeven"><td><a href="#m3"><b>VerifyCompleteInventoryTransfer</b>  </a></td><td class="numi">1</td><td>1650869823595</td><td class="numi">61768</td></tr>
+<tr><th colspan="4">Mobile Automation &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="6">Hybrent3_9_0rc3.Login<td><a href="#m4"><b>VerifyWithBlankSiteNameEnter</b>  </a></td><td class="numi">1</td><td>1650868526781</td><td class="numi">9661</td></tr><tr class="passedodd"><td><a href="#m5"><b>VerifyWithInvalidSiteNameEnter</b>  </a></td><td class="numi">1</td><td>1650868536448</td><td class="numi">6382</td></tr><tr class="passedodd"><td><a href="#m6"><b>VerifyWithValidSiteNameEnter</b>  </a></td><td class="numi">1</td><td>1650868542836</td><td class="numi">6692</td></tr><tr class="passedodd"><td><a href="#m7"><b>LoginWithBlankCrednetials</b>  </a></td><td class="numi">1</td><td>1650868549533</td><td class="numi">58307</td></tr><tr class="passedodd"><td><a href="#m8"><b>LoginWithInvalidCrednetials</b>  </a></td><td class="numi">1</td><td>1650868607845</td><td class="numi">8191</td></tr><tr class="passedodd"><td><a href="#m9"><b>LoginWithValidCrednetials</b>  </a></td><td class="numi">1</td><td>1650868616041</td><td class="numi">13884</td></tr>
+<tr class="passedeven"><td rowspan="2">Hybrent3_9_0rc3.Shop<td><a href="#m10"><b>Verify_Shop</b>  </a></td><td class="numi">1</td><td>1650868629939</td><td class="numi">19123</td></tr><tr class="passedeven"><td><a href="#m11"><b>Verify_ItemAddToCart</b>  </a></td><td class="numi">1</td><td>1650868649067</td><td class="numi">7669</td></tr>
+<tr class="passedodd"><td rowspan="3">Hybrent3_9_0rc3.Cart<td><a href="#m12"><b>Verify_Cart</b>  </a></td><td class="numi">1</td><td>1650868656745</td><td class="numi">49320</td></tr><tr class="passedodd"><td><a href="#m13"><b>Verify_ADDItemsFromCart</b>  </a></td><td class="numi">1</td><td>1650868706071</td><td class="numi">33641</td></tr><tr class="passedodd"><td><a href="#m14"><b>Create_Order</b>  </a></td><td class="numi">1</td><td>1650868739715</td><td class="numi">18218</td></tr>
+<tr class="passedeven"><td rowspan="1">Hybrent3_9_0rc3.Orders<td><a href="#m15"><b>Verify_Order</b>  </a></td><td class="numi">1</td><td>1650868757938</td><td class="numi">24685</td></tr>
+<tr class="passedodd"><td rowspan="3">Hybrent3_9_0rc3.Receive_Orders<td><a href="#m16"><b>VerifyTap_ReceiveOrder</b>  </a></td><td class="numi">1</td><td>1650868782629</td><td class="numi">42875</td></tr><tr class="passedodd"><td><a href="#m17"><b>VerifySearch_Order</b>  </a></td><td class="numi">1</td><td>1650868825509</td><td class="numi">5636</td></tr><tr class="passedodd"><td><a href="#m18"><b>Verify_ReceiveOrder</b>  </a></td><td class="numi">1</td><td>1650868831148</td><td class="numi">26937</td></tr>
+<tr class="passedeven"><td rowspan="4">Hybrent3_9_0rc3.BillAndReplace<td><a href="#m19"><b>VerifyTap_BillAndReplace</b>  </a></td><td class="numi">1</td><td>1650868858090</td><td class="numi">121641</td></tr><tr class="passedeven"><td><a href="#m20"><b>VerifyAddItem_BillAndReplace</b>  </a></td><td class="numi">1</td><td>1650868979735</td><td class="numi">14716</td></tr><tr class="passedeven"><td><a href="#m21"><b>Generate_BillAndReplace_PO</b>  </a></td><td class="numi">1</td><td>1650868994454</td><td class="numi">18171</td></tr><tr class="passedeven"><td><a href="#m22"><b>Verify_BillAndReplace_PO</b>  </a></td><td class="numi">1</td><td>1650869012629</td><td class="numi">23387</td></tr>
+<tr class="passedodd"><td rowspan="3">Hybrent3_9_0rc3.Shipment<td><a href="#m23"><b>VerifyShipmentButtonTap</b>  </a></td><td class="numi">1</td><td>1650869165232</td><td class="numi">17843</td></tr><tr class="passedodd"><td><a href="#m24"><b>VerifyShipmentDeatailPage</b>  </a></td><td class="numi">1</td><td>1650869183079</td><td class="numi">1329</td></tr><tr class="passedodd"><td><a href="#m25"><b>ReceiveShipment</b>  </a></td><td class="numi">1</td><td>1650869184411</td><td class="numi">64449</td></tr>
+<tr class="passedeven"><td rowspan="3">Hybrent3_9_0rc3.Invoice<td><a href="#m26"><b>VerifyInvoiceButtonTap</b>  </a></td><td class="numi">1</td><td>1650869248864</td><td class="numi">11387</td></tr><tr class="passedeven"><td><a href="#m27"><b>VerifyInvoiceDeatilPage</b>  </a></td><td class="numi">1</td><td>1650869260254</td><td class="numi">6014</td></tr><tr class="passedeven"><td><a href="#m28"><b>VerifyProcessedInvoice</b>  </a></td><td class="numi">1</td><td>1650869266271</td><td class="numi">24913</td></tr>
+<tr class="passedodd"><td rowspan="9">Hybrent3_9_0rc3.Templates<td><a href="#m29"><b>Verify_OrderTemplate</b>  </a></td><td class="numi">1</td><td>1650869291190</td><td class="numi">46644</td></tr><tr class="passedodd"><td><a href="#m30"><b>Verify_OrderTemplateDetailPage</b>  </a></td><td class="numi">1</td><td>1650869337838</td><td class="numi">10201</td></tr><tr class="passedodd"><td><a href="#m31"><b>Make_Order</b>  </a></td><td class="numi">1</td><td>1650869348042</td><td class="numi">13292</td></tr><tr class="passedodd"><td><a href="#m32"><b>Verify_ScanOutTemplate</b>  </a></td><td class="numi">1</td><td>1650869361338</td><td class="numi">24559</td></tr><tr class="passedodd"><td><a href="#m33"><b>Verify_ScanOutTemplateDetailPage</b>  </a></td><td class="numi">1</td><td>1650869385899</td><td class="numi">9121</td></tr><tr class="passedodd"><td><a href="#m34"><b>Verify_ScanOut</b>  </a></td><td class="numi">1</td><td>1650869395023</td><td class="numi">37962</td></tr><tr class="passedodd"><td><a href="#m35"><b>Verify_KitTemplate</b>  </a></td><td class="numi">1</td><td>1650869432990</td><td class="numi">468</td></tr><tr class="passedodd"><td><a href="#m36"><b>Verify_KitTemplateDetailPage</b>  </a></td><td class="numi">1</td><td>1650869433461</td><td class="numi">14377</td></tr><tr class="passedodd"><td><a href="#m37"><b>Make_Kit</b>  </a></td><td class="numi">1</td><td>1650869447841</td><td class="numi">15670</td></tr>
+<tr class="passedeven"><td rowspan="3">Hybrent3_9_0rc3.ScanIn<td><a href="#m38"><b>Verify_ScanInButtonTap</b>  </a></td><td class="numi">1</td><td>1650869463514</td><td class="numi">17081</td></tr><tr class="passedeven"><td><a href="#m39"><b>VerifyAddItem_ScanIn</b>  </a></td><td class="numi">1</td><td>1650869480599</td><td class="numi">23807</td></tr><tr class="passedeven"><td><a href="#m40"><b>Verify_Complete_ScanIn</b>  </a></td><td class="numi">1</td><td>1650869504409</td><td class="numi">27636</td></tr>
+<tr class="passedodd"><td rowspan="3">Hybrent3_9_0rc3.ScanOut<td><a href="#m41"><b>Verify_ScanOutButtonTap</b>  </a></td><td class="numi">1</td><td>1650869532051</td><td class="numi">12420</td></tr><tr class="passedodd"><td><a href="#m42"><b>Verify_AddItemScanOut</b>  </a></td><td class="numi">1</td><td>1650869544474</td><td class="numi">10680</td></tr><tr class="passedodd"><td><a href="#m43"><b>Verify_Complete_ScanOut</b>  </a></td><td class="numi">1</td><td>1650869555157</td><td class="numi">55630</td></tr>
+<tr class="passedeven"><td rowspan="3">Hybrent3_9_0rc3.Charge_Resident<td><a href="#m44"><b>VerifyChargeResidentButtonTap</b>  </a></td><td class="numi">1</td><td>1650869610790</td><td class="numi">22160</td></tr><tr class="passedeven"><td><a href="#m45"><b>VerifyAddItemChargeResident</b>  </a></td><td class="numi">1</td><td>1650869632953</td><td class="numi">42913</td></tr><tr class="passedeven"><td><a href="#m46"><b>VerifyCompleteChargeResident</b>  </a></td><td class="numi">1</td><td>1650869675869</td><td class="numi">37705</td></tr>
+<tr class="passedodd"><td rowspan="1">Hybrent3_9_0rc3.Inventory_Transfer<td><a href="#m47"><b>VerifyInventoryTransferButtonTap</b>  </a></td><td class="numi">1</td><td>1650869713578</td><td class="numi">39940</td></tr>
+<tr class="passedeven"><td rowspan="3">Hybrent3_9_0rc3.Inventory_Receive<td><a href="#m48"><b>VerifyInventoryRecieveButtonTap</b>  </a></td><td class="numi">1</td><td>1650869885374</td><td class="numi">51971</td></tr><tr class="passedeven"><td><a href="#m49"><b>VerifyCompleteInventoryRecieve</b>  </a></td><td class="numi">1</td><td>1650869937349</td><td class="numi">31264</td></tr><tr class="passedeven"><td><a href="#m50"><b>CreateVendorSignature</b>  </a></td><td class="numi">1</td><td>1650869968616</td><td class="numi">32781</td></tr>
+<tr class="passedodd"><td rowspan="3">Hybrent3_9_0rc3.BillOnly<td><a href="#m51"><b>VerifyBillOnlyButtonTap</b>  </a></td><td class="numi">1</td><td>1650870001400</td><td class="numi">63121</td></tr><tr class="passedodd"><td><a href="#m52"><b>VerifyAddNewItemBillOnly</b>  </a></td><td class="numi">1</td><td>1650870064524</td><td class="numi">29737</td></tr><tr class="passedodd"><td><a href="#m53"><b>GenerateOrderBillOnly</b>  </a></td><td class="numi">1</td><td>1650870094265</td><td class="numi">69456</td></tr>
+<tr class="passedeven"><td rowspan="3">Hybrent3_9_0rc3.Claim<td><a href="#m54"><b>VerifyStartNewClaimButtonTap</b>  </a></td><td class="numi">1</td><td>1650870163724</td><td class="numi">31155</td></tr><tr class="passedeven"><td><a href="#m55"><b>VerifyAddItemInClaim</b>  </a></td><td class="numi">1</td><td>1650870194882</td><td class="numi">22331</td></tr><tr class="passedeven"><td><a href="#m56"><b>VerifyClaimCreation</b>  </a></td><td class="numi">1</td><td>1650870217215</td><td class="numi">33736</td></tr>
+<tr class="passedodd"><td rowspan="3">Hybrent3_9_0rc3.Cycle_Count<td><a href="#m57"><b>VerifyCycleCountButtonTap</b>  </a></td><td class="numi">1</td><td>1650870250953</td><td class="numi">48507</td></tr><tr class="passedodd"><td><a href="#m58"><b>VerifyIntiateCycleCount</b>  </a></td><td class="numi">1</td><td>1650870299463</td><td class="numi">120836</td></tr><tr class="passedodd"><td><a href="#m59"><b>Verify_CycleCount</b>  </a></td><td class="numi">1</td><td>1650870420302</td><td class="numi">4842</td></tr>
+<tr class="passedeven"><td rowspan="2">Hybrent3_9_0rc3.NewsAndEvents<td><a href="#m60"><b>VerifyNewsAndEventsButtonTap</b>  </a></td><td class="numi">1</td><td>1650870425147</td><td class="numi">47137</td></tr><tr class="passedeven"><td><a href="#m61"><b>VerifyNewsDescriptionScreen</b>  </a></td><td class="numi">1</td><td>1650870472287</td><td class="numi">14406</td></tr>
+<tr class="passedodd"><td rowspan="2">Hybrent3_9_0rc3.Profile<td><a href="#m62"><b>VerifyProfileButtonTap</b>  </a></td><td class="numi">1</td><td>1650870486696</td><td class="numi">42234</td></tr><tr class="passedodd"><td><a href="#m63"><b>VerifyProfileScreen</b>  </a></td><td class="numi">1</td><td>1650870528933</td><td class="numi">31339</td></tr>
+<tr class="passedeven"><td rowspan="2">Hybrent3_9_0rc3.Settings<td><a href="#m64"><b>VerifySettingsButtonTap</b>  </a></td><td class="numi">1</td><td>1650870560276</td><td class="numi">11924</td></tr><tr class="passedeven"><td><a href="#m65"><b>VerifySettingsScreen</b>  </a></td><td class="numi">1</td><td>1650870572204</td><td class="numi">31196</td></tr>
+<tr class="passedodd"><td rowspan="2">Hybrent3_9_0rc3.Logout<td><a href="#m66"><b>VerifyLogoutButtonTap</b>  </a></td><td class="numi">1</td><td>1650870603403</td><td class="numi">44122</td></tr><tr class="passedodd"><td><a href="#m67"><b>VerifyLogout</b>  </a></td><td class="numi">1</td><td>1650870647527</td><td class="numi">873</td></tr>
+</table>
+<h1>Mobile Automation</h1>
+<a id="m1"></a><h2>Hybrent3_9_0rc3.Inventory_Transfer:VerifyAddItemTransfer</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View (tried for 30 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+<br/>at Hybrent3_9_0rc3.Inventory_Transfer.VerifyAddItemTransfer(Inventory_Transfer.java:115)
+<br/>25 lines not shown
+<p>Caused by An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-9JTRJBE&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, databaseEnabled: false, desired: {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, deviceName: ZY2242XGM3, platformName: android, skipUnlock: true, version: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (5) Plus, deviceName: ZY2242XGM3, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY2242XGM3, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, skipUnlock: true, statBarHeight: 72, takesScreenshot: true, version: 8.1.0, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0451226b-4db6-4e46-bedc-1cafa85fa021
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.view.View}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+<br/>at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+<br/>at Hybrent3_9_0rc3.Inventory_Transfer.VerifyAddItemTransfer(Inventory_Transfer.java:115)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>Hybrent3_9_0rc3.Inventory_Transfer:VerifyCompleteInventoryTransfer</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[2]/android.widget.ListView/android.view.View[1]/android.view.View/android.view.View/android.widget.Button (tried for 30 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+<br/>at Hybrent3_9_0rc3.Inventory_Transfer.VerifyCompleteInventoryTransfer(Inventory_Transfer.java:158)
+<br/>25 lines not shown
+<p>Caused by An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-9JTRJBE&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, databaseEnabled: false, desired: {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, deviceName: ZY2242XGM3, platformName: android, skipUnlock: true, version: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (5) Plus, deviceName: ZY2242XGM3, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY2242XGM3, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, skipUnlock: true, statBarHeight: 72, takesScreenshot: true, version: 8.1.0, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0451226b-4db6-4e46-bedc-1cafa85fa021
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[2]/android.widget.ListView/android.view.View[1]/android.view.View/android.view.View/android.widget.Button}</p>
+sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+<br/>at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+<br/>at Hybrent3_9_0rc3.Inventory_Transfer.VerifyCompleteInventoryTransfer(Inventory_Transfer.java:158)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>Hybrent3_9_0rc3.BillAndReplace:Recieve_BillAndReplace_PO</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[3]/android.view.View/android.widget.EditText
+ (tried for 70 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+<br/>at Hybrent3_9_0rc3.BillAndReplace.Recieve_BillAndReplace_PO(BillAndReplace.java:327)
+<br/>25 lines not shown
+<p>Caused by An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-9JTRJBE&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, databaseEnabled: false, desired: {appActivity: com.hybrent.hybrent.MainAct..., appPackage: com.hybrent.hybrent, deviceName: ZY2242XGM3, platformName: android, skipUnlock: true, version: 8.1.0}, deviceApiLevel: 27, deviceManufacturer: motorola, deviceModel: Moto G (5) Plus, deviceName: ZY2242XGM3, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ZY2242XGM3, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, skipUnlock: true, statBarHeight: 72, takesScreenshot: true, version: 8.1.0, viewportRect: {height: 1704, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0451226b-4db6-4e46-bedc-1cafa85fa021
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[3]/android.view.View/android.widget.EditText
+}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+<br/>at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+<br/>at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+<br/>at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+<br/>at Hybrent3_9_0rc3.BillAndReplace.Recieve_BillAndReplace_PO(BillAndReplace.java:327)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>Hybrent3_9_0rc3.Charge_Resident:VerifyChargeResidentButtonTap</h2>
+<div style="padding-left:3em">
+=====Charge Resident Started sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>Hybrent3_9_0rc3.Templates:Verify_KitTemplate</h2>
+<div style="padding-left:3em">
+=====Kit Template Started sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>Hybrent3_9_0rc3.Templates:Make_Kit</h2>
+<div style="padding-left:3em">
+=====Kit Template has been Completed sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>Hybrent3_9_0rc3.Cart:Verify_Cart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>Hybrent3_9_0rc3.Settings:VerifySettingsScreen</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>Hybrent3_9_0rc3.Inventory_Receive:VerifyCompleteInventoryRecieve</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>Hybrent3_9_0rc3.Login:VerifyWithValidSiteNameEnter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>Hybrent3_9_0rc3.Login:VerifyWithBlankSiteNameEnter</h2>
+<div style="padding-left:3em">
+=====Login Session Started=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>Hybrent3_9_0rc3.Templates:Verify_ScanOutTemplateDetailPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>Hybrent3_9_0rc3.BillOnly:GenerateOrderBillOnly</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>Hybrent3_9_0rc3.BillAndReplace:Generate_BillAndReplace_PO</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>Hybrent3_9_0rc3.Templates:Make_Order</h2>
+<div style="padding-left:3em">
+=====Order Template has been Completed sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>Hybrent3_9_0rc3.Cart:Verify_ADDItemsFromCart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>Hybrent3_9_0rc3.Inventory_Transfer:VerifyInventoryTransferButtonTap</h2>
+<div style="padding-left:3em">
+=====Inventory Transfer Started sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>Hybrent3_9_0rc3.ScanIn:Verify_Complete_ScanIn</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>Hybrent3_9_0rc3.Cycle_Count:Verify_CycleCount</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m20"></a><h2>Hybrent3_9_0rc3.Receive_Orders:VerifyTap_ReceiveOrder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m21"></a><h2>Hybrent3_9_0rc3.Cart:Create_Order</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m22"></a><h2>Hybrent3_9_0rc3.Claim:VerifyAddItemInClaim</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m23"></a><h2>Hybrent3_9_0rc3.Cycle_Count:VerifyIntiateCycleCount</h2>
+<div style="padding-left:3em">
+=====Cycle Count Completed Successfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m24"></a><h2>Hybrent3_9_0rc3.Inventory_Receive:VerifyInventoryRecieveButtonTap</h2>
+<div style="padding-left:3em">
+=====Inventory Receive Started sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m25"></a><h2>Hybrent3_9_0rc3.Charge_Resident:VerifyCompleteChargeResident</h2>
+<div style="padding-left:3em">
+=====Charge Resident has been Completed sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m26"></a><h2>Hybrent3_9_0rc3.Inventory_Receive:CreateVendorSignature</h2>
+<div style="padding-left:3em">
+=====Inventory Transfer has been Completed sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m27"></a><h2>Hybrent3_9_0rc3.Login:LoginWithInvalidCrednetials</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m28"></a><h2>Hybrent3_9_0rc3.NewsAndEvents:VerifyNewsAndEventsButtonTap</h2>
+<div style="padding-left:3em">
+=====News And Events Started=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m29"></a><h2>Hybrent3_9_0rc3.Settings:VerifySettingsButtonTap</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m30"></a><h2>Hybrent3_9_0rc3.Templates:Verify_ScanOut</h2>
+<div style="padding-left:3em">
+=====Scan_out Template has been Completed sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m31"></a><h2>Hybrent3_9_0rc3.Shipment:VerifyShipmentDeatailPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m32"></a><h2>Hybrent3_9_0rc3.Templates:Verify_ScanOutTemplate</h2>
+<div style="padding-left:3em">
+=====Scan_out Template Started sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m33"></a><h2>Hybrent3_9_0rc3.Shop:Verify_Shop</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m34"></a><h2>Hybrent3_9_0rc3.Invoice:VerifyInvoiceButtonTap</h2>
+<div style="padding-left:3em">
+=====Invoice processed Started sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m35"></a><h2>Hybrent3_9_0rc3.ScanOut:Verify_ScanOutButtonTap</h2>
+<div style="padding-left:3em">
+=====ScanOut Started=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m36"></a><h2>Hybrent3_9_0rc3.BillOnly:VerifyBillOnlyButtonTap</h2>
+<div style="padding-left:3em">
+=====BillOnly Started=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m37"></a><h2>Hybrent3_9_0rc3.Cycle_Count:VerifyCycleCountButtonTap</h2>
+<div style="padding-left:3em">
+=====Cycle count Started=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m38"></a><h2>Hybrent3_9_0rc3.BillAndReplace:Verify_BillAndReplace_PO</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m39"></a><h2>Hybrent3_9_0rc3.ScanIn:Verify_ScanInButtonTap</h2>
+<div style="padding-left:3em">
+=====ScanIn Started=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m40"></a><h2>Hybrent3_9_0rc3.BillOnly:VerifyAddNewItemBillOnly</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m41"></a><h2>Hybrent3_9_0rc3.Receive_Orders:Verify_ReceiveOrder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m42"></a><h2>Hybrent3_9_0rc3.Invoice:VerifyProcessedInvoice</h2>
+<div style="padding-left:3em">
+=====Invoice processed has been Completed sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m43"></a><h2>Hybrent3_9_0rc3.Templates:Verify_OrderTemplate</h2>
+<div style="padding-left:3em">
+=====Order Template Started sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m44"></a><h2>Hybrent3_9_0rc3.NewsAndEvents:VerifyNewsDescriptionScreen</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m45"></a><h2>Hybrent3_9_0rc3.ScanOut:Verify_Complete_ScanOut</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m46"></a><h2>Hybrent3_9_0rc3.Invoice:VerifyInvoiceDeatilPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m47"></a><h2>Hybrent3_9_0rc3.ScanOut:Verify_AddItemScanOut</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m48"></a><h2>Hybrent3_9_0rc3.Logout:VerifyLogoutButtonTap</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m49"></a><h2>Hybrent3_9_0rc3.Shop:Verify_ItemAddToCart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m50"></a><h2>Hybrent3_9_0rc3.BillAndReplace:VerifyTap_BillAndReplace</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m51"></a><h2>Hybrent3_9_0rc3.Login:LoginWithBlankCrednetials</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m52"></a><h2>Hybrent3_9_0rc3.Orders:Verify_Order</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m53"></a><h2>Hybrent3_9_0rc3.BillAndReplace:VerifyAddItem_BillAndReplace</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m54"></a><h2>Hybrent3_9_0rc3.ScanIn:VerifyAddItem_ScanIn</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m55"></a><h2>Hybrent3_9_0rc3.Charge_Resident:VerifyAddItemChargeResident</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m56"></a><h2>Hybrent3_9_0rc3.Receive_Orders:VerifySearch_Order</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m57"></a><h2>Hybrent3_9_0rc3.Templates:Verify_OrderTemplateDetailPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m58"></a><h2>Hybrent3_9_0rc3.Claim:VerifyClaimCreation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m59"></a><h2>Hybrent3_9_0rc3.Profile:VerifyProfileScreen</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m60"></a><h2>Hybrent3_9_0rc3.Logout:VerifyLogout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m61"></a><h2>Hybrent3_9_0rc3.Profile:VerifyProfileButtonTap</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m62"></a><h2>Hybrent3_9_0rc3.Shipment:ReceiveShipment</h2>
+<div style="padding-left:3em">
+=====Shipment has been Completed sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m63"></a><h2>Hybrent3_9_0rc3.Claim:VerifyStartNewClaimButtonTap</h2>
+<div style="padding-left:3em">
+=====Claims Started=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m64"></a><h2>Hybrent3_9_0rc3.Login:VerifyWithInvalidSiteNameEnter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m65"></a><h2>Hybrent3_9_0rc3.Shipment:VerifyShipmentButtonTap</h2>
+<div style="padding-left:3em">
+=====Shipment Started sucessfully=====<br><br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m66"></a><h2>Hybrent3_9_0rc3.Login:LoginWithValidCrednetials</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m67"></a><h2>Hybrent3_9_0rc3.Templates:Verify_KitTemplateDetailPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Hybrent.CustomReporter"/>
+  </listeners>
+  <test name="Test(failed)" preserve-order="true">
+    <classes>
+      <class name="Hybrent.Invoice">
+        <methods>
+          <include name="Verify_Invoice"/>
+          <include name="invoice"/>
+        </methods>
+      </class> <!-- Hybrent.Invoice -->
+      <class name="Hybrent.Pref_Card">
+        <methods>
+          <include name="Pick_List"/>
+          <include name="Complete_Cases"/>
+          <include name="Execute_Cases"/>
+        </methods>
+      </class> <!-- Hybrent.Pref_Card -->
+      <class name="Hybrent.Templates">
+        <methods>
+          <include name="Kit_Template"/>
+          <include name="Scan_Out_Template"/>
+          <include name="Order_Template"/>
+        </methods>
+      </class> <!-- Hybrent.Templates -->
+      <class name="Hybrent.Shipment">
+        <methods>
+          <include name="shipment"/>
+        </methods>
+      </class> <!-- Hybrent.Shipment -->
+      <class name="Hybrent.Login">
+        <methods>
+          <include name="setUp_Device"/>
+        </methods>
+      </class> <!-- Hybrent.Login -->
+      <class name="Hybrent.Charge_Resident">
+        <methods>
+          <include name="Charge_Resident"/>
+        </methods>
+      </class> <!-- Hybrent.Charge_Resident -->
+      <class name="Hybrent.Inventory_Transfer">
+        <methods>
+          <include name="Inventory_Transfer"/>
+        </methods>
+      </class> <!-- Hybrent.Inventory_Transfer -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

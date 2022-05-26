@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Hybrent" parallel="false">
+  <listeners>
+	<listener class-name="Hybrent.CustomReporter"/>
+</listeners>
+  <test name="Mobile Automation">
+    <classes>
+        <class name="Hybrent.Login"/>
+      <class name="Hybrent.Shipment"/>
+      <class name="Hybrent.Charge_Resident"/>
+      <class name="Hybrent.BillOnly"/>
+      <class name="Hybrent.Claim"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

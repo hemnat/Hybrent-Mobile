@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Hybrent]">
+  <listeners>
+    <listener class-name="Hybrent3_9_0rc3.CustomReporter"/>
+  </listeners>
+  <test name="Mobile Automation(failed)" preserve-order="true">
+    <classes>
+      <class name="Hybrent3_9_0rc3.Login">
+        <methods>
+          <include name="setUp_Device"/>
+        </methods>
+      </class> <!-- Hybrent3_9_0rc3.Login -->
+      <class name="Hybrent3_9_0rc3.BillAndReplace">
+        <methods>
+          <include name="Recieve_BillAndReplace_PO"/>
+        </methods>
+      </class> <!-- Hybrent3_9_0rc3.BillAndReplace -->
+      <class name="Hybrent3_9_0rc3.Inventory_Transfer">
+        <methods>
+          <include name="VerifyCompleteInventoryTransfer"/>
+          <include name="VerifyAddItemTransfer"/>
+        </methods>
+      </class> <!-- Hybrent3_9_0rc3.Inventory_Transfer -->
+    </classes>
+  </test> <!-- Mobile Automation(failed) -->
+</suite> <!-- Failed suite [Hybrent] -->
